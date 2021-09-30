@@ -10,6 +10,13 @@
   <ItemGroup>
     <None Remove="1.jpg" />
     <None Remove="2.jpg" />
+    <None Remove="3.jpg" />
+    <None Remove="4.jpg" />
+    <None Remove="5.jpg" />
+    <None Remove="6.jpg" />
+    <None Remove="7.jpg" />
+    <None Remove="8.jpg" />
+    <None Remove="9.jpg" />
     <None Remove="achievements icon.png" />
     <None Remove="books.png" />
     <None Remove="countdown.png" />
@@ -22,6 +29,13 @@
   <ItemGroup>
     <Resource Include="1.jpg" />
     <Resource Include="2.jpg" />
+    <Resource Include="3.jpg" />
+    <Resource Include="4.jpg" />
+    <Resource Include="5.jpg" />
+    <Resource Include="6.jpg" />
+    <Resource Include="7.jpg" />
+    <Resource Include="8.jpg" />
+    <Resource Include="9.jpg" />
     <Resource Include="achievements icon.png" />
     <Resource Include="books.png" />
     <Resource Include="App icons\books.png" />

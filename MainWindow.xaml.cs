@@ -44,5 +44,15 @@ namespace Dewey_divertissement
                 System.Environment.Exit(1);
             }
         }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Coming soon", "Next update");
+        }
+
+        private void btnLeaderboard_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Coming soon", "Next update");
+        }
     }
 }
