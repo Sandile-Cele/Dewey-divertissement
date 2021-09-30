@@ -20,5 +20,5 @@ C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\De
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\ref\Dewey divertissement.dll
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Dewey divertissement.pdb
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Dewey divertissement.genruntimeconfig.cache
-C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\My images\Replacingbooks.g.cs
-C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\My images\Replacingbooks.baml
+C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\ReplacingBooks.g.cs
+C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\ReplacingBooks.baml

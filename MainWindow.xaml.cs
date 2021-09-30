@@ -27,7 +27,22 @@ namespace Dewey_divertissement
 
         private void btnReplacingBooks_Click(object sender, RoutedEventArgs e)
         {
-            btnReplacingBooks 
+            ReplacingBooks replacingBooks = new();
+            this.Hide();
+            replacingBooks.Show();
+        }
+
+        //Before closing making sure the user wants to exit
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to exit application", "Exit application?", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                System.Environment.Exit(1);
+            }
         }
     }
 }
