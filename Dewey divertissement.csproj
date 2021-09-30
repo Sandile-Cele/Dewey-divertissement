@@ -13,6 +13,7 @@
     <None Remove="achievements icon.png" />
     <None Remove="books.png" />
     <None Remove="countdown.png" />
+    <None Remove="instruction.png" />
     <None Remove="numbers.png" />
     <None Remove="search.png" />
     <None Remove="user.png" />
@@ -27,6 +28,7 @@
     <Resource Include="App icons\numbers.png" />
     <Resource Include="App icons\search.png" />
     <Resource Include="App icons\user.png" />
+    <Resource Include="instruction.png" />
     <Resource Include="numbers.png" />
     <Resource Include="search.png" />
   </ItemGroup>
