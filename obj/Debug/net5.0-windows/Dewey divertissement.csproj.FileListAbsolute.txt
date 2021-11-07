@@ -24,3 +24,7 @@ C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Re
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\ReplacingBooks.baml
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Achievements.g.cs
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Achievements.baml
+C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\CreateMatch.g.cs
+C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Identifying areas.g.cs
+C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\CreateMatch.baml
+C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Identifying areas.baml

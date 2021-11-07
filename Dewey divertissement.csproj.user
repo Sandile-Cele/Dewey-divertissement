@@ -10,12 +10,24 @@
     <Compile Update="Achievements.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CreateMatch.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Identifying areas.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ReplacingBooks.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Achievements.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CreateMatch.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Identifying areas.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

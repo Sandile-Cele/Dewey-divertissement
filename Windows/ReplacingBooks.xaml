@@ -1,0 +1,51 @@
+﻿<Window x:Class="Dewey_divertissement.ReplacingBooks"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dewey_divertissement"
+        mc:Ignorable="d"
+        Title="ReplacingBooks" Height="576" Width="663" Background="#FF00BFFE" Closing="Window_Closing" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Label Content="Replacing books" HorizontalAlignment="Left" Margin="219,10,0,0" VerticalAlignment="Top" FontSize="48"/>
+        <ListBox Name="lbCalls" Margin="400,203,0,0" Background="#FFC4EFFD" Height="262" VerticalAlignment="Top" MouseDoubleClick="lbCalls_MouseDoubleClick" HorizontalAlignment="Left" Width="205"/>
+        <Button Name="btnDone" Content="Done" HorizontalAlignment="Left" Margin="474,469,0,0" VerticalAlignment="Top" Width="131" Height="38" FontSize="20" Background="#FFFFD100" Click="btnDone_Click" BorderBrush="#FF707070"/>
+        <Button Name="btnNewCalls" Content="⭮" HorizontalAlignment="Left" Margin="190,470,0,0" VerticalAlignment="Top" Height="37" Width="200" FontSize="24" Background="#FFFFD100" Click="btnNewCalls_Click"/>
+        <Button Name="btnUndo" Content="⭯" HorizontalAlignment="Left" Margin="400,470,0,0" VerticalAlignment="Top" Height="37" Width="69" FontSize="24" Background="#FFFFD100" Click="btnUndo_Click"/>
+        <Label Content="New calls" HorizontalAlignment="Left" Margin="254,507,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <Label Content="Clear list" HorizontalAlignment="Left" Margin="407,507,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <Label Content="Double click to move items" HorizontalAlignment="Left" Margin="190,177,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <ListBox Name="lbCallsRandom" Margin="190,203,0,0" Background="#FFC4EFFD" Height="262" VerticalAlignment="Top" MouseDoubleClick="lbCallsRandom_MouseDoubleClick" SelectionChanged="lbCallsRandom_SelectionChanged" HorizontalAlignment="Left" Width="205"/>
+        <Label Content="Double click to remove items&#xD;&#xA;" HorizontalAlignment="Left" Margin="400,177,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.502"/>
+
+
+        <Button Content="Fix" HorizontalAlignment="Left" Margin="509,408,0,0" VerticalAlignment="Top" Height="28" Width="36" Click="Button_Click"/>
+        <Label Content="Timer:" HorizontalAlignment="Left" Margin="400,138,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Name="lbTime" Content="00:00:00" HorizontalAlignment="Left" Margin="529,138,0,0" VerticalAlignment="Top" FontSize="18"/>
+
+
+        <ProgressBar Name="pbNextArchivement" HorizontalAlignment="Left" Height="37" Margin="190,97,0,0" VerticalAlignment="Top" Width="415" Background="#FF004FAE" BorderBrush="{x:Null}"/>
+        <Label Content="Until all achievements are unlocked" HorizontalAlignment="Left" Margin="268,100,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Rectangle HorizontalAlignment="Left" Height="472" Margin="15,0,0,44" VerticalAlignment="Bottom" Width="145" Fill="#FF004FAE"/>
+        <Label Content="Points" Margin="0,91,543,0" VerticalAlignment="Top" RenderTransformOrigin="7.091,-0.769" HorizontalAlignment="Right" Width="66" FontSize="18"/>
+        <Label Name="lbPt" Content="00" Margin="0,44,539,0" VerticalAlignment="Top" RenderTransformOrigin="7.091,-0.769" FontSize="36" HorizontalAlignment="Right" Width="68"/>
+
+        <Rectangle HorizontalAlignment="Left" Height="118" Margin="28,385,0,0" VerticalAlignment="Top" Width="118" Fill="#FFFFD100"/>
+
+        <Button Name="btnAchievements" Content="" HorizontalAlignment="Left" Margin="38,393,0,0" VerticalAlignment="Top" Height="102" Width="92" Click="btnAchievements_Click" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="images/achievements icon.png"/>
+            </Button.Background>
+        </Button>
+        <Rectangle HorizontalAlignment="Left" Height="218" Margin="26,134,0,0" VerticalAlignment="Top" Width="124" Fill="#FF003A6A"/>
+        <Label Content="Points:&#xA;10min 2 points&#xA;5min 5 points&#xA;2 min 10 points" HorizontalAlignment="Left" Margin="36,260,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="114" Foreground="#FFF1FBAF"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="37,148,0,0" VerticalAlignment="Top" Width="100" Source="images/instruction.png"/>
+
+    </Grid>
+</Window>

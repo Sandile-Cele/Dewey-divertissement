@@ -27,24 +27,24 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="1.jpg" />
-    <Resource Include="2.jpg" />
-    <Resource Include="3.jpg" />
-    <Resource Include="4.jpg" />
-    <Resource Include="5.jpg" />
-    <Resource Include="6.jpg" />
-    <Resource Include="7.jpg" />
-    <Resource Include="8.jpg" />
-    <Resource Include="9.jpg" />
-    <Resource Include="achievements icon.png" />
+    <Resource Include="Images\1.jpg" />
+    <Resource Include="Images\2.jpg" />
+    <Resource Include="Images\3.jpg" />
+    <Resource Include="Images\4.jpg" />
+    <Resource Include="Images\5.jpg" />
+    <Resource Include="Images\6.jpg" />
+    <Resource Include="Images\7.jpg" />
+    <Resource Include="Images\8.jpg" />
+    <Resource Include="Images\9.jpg" />
+    <Resource Include="Images\achievements icon.png" />
     <Resource Include="books.png" />
     <Resource Include="App icons\books.png" />
     <Resource Include="App icons\numbers.png" />
     <Resource Include="App icons\search.png" />
     <Resource Include="App icons\user.png" />
-    <Resource Include="instruction.png" />
-    <Resource Include="numbers.png" />
-    <Resource Include="search.png" />
+    <Resource Include="Images\instruction.png" />
+    <Resource Include="Images\numbers.png" />
+    <Resource Include="Images\search.png" />
   </ItemGroup>
 
 </Project>

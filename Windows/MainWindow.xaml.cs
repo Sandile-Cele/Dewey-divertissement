@@ -54,5 +54,12 @@ namespace Dewey_divertissement
         {
             MessageBox.Show("Coming soon", "Next update");
         }
+
+        private void btnReplacingBooks_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            Identifying_areas identifying_Areas = new();
+            this.Hide();
+            identifying_Areas.Show();
+        }
     }
 }

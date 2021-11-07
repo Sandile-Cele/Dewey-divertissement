@@ -1,0 +1,17 @@
+﻿<Window x:Class="Dewey_divertissement.CreateMatch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dewey_divertissement"
+        mc:Ignorable="d"
+        Title="CreateMatch" Height="126" Width="304" Background="#FF00BFFE">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Margin="9,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="167,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="9,10,0,0" Text="Enter text for column A" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="167,10,0,0" Text="Enter text for column B" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button Content="Done" Name="btnDone" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="277" Click="btnDone_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,58 @@
+﻿<Window x:Class="Dewey_divertissement.Achievements"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dewey_divertissement"
+        mc:Ignorable="d"
+        Title="Achievements" Height="552" Width="517" Background="#FF00BFFE">
+    <Grid>
+        <Button Name="btn1" Content="100 points" HorizontalAlignment="Left" Margin="30,16,0,0" VerticalAlignment="Top" Height="146" Width="137" IsEnabled="False">
+            <Button.Background>
+                <ImageBrush ImageSource="images/1.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btn2" Content="200 points" HorizontalAlignment="Left" Margin="187,16,0,0" VerticalAlignment="Top" Height="146" Width="137" IsEnabled="False">
+            <Button.Background>
+                <ImageBrush ImageSource="images/2.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn3" Content="300 points" HorizontalAlignment="Left" Margin="346,16,0,0" VerticalAlignment="Top" Height="146" Width="136" IsEnabled="False">
+            <Button.Background>
+                <ImageBrush ImageSource="images/3.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn4" Content="400 points" HorizontalAlignment="Left" Margin="30,183,0,0" VerticalAlignment="Top" Height="146" Width="137" IsEnabled="False">
+            <Button.Background>
+                <ImageBrush ImageSource="images/4.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn5" Content="500 points" HorizontalAlignment="Left" Margin="187,183,0,0" VerticalAlignment="Top" Height="146" Width="137" IsEnabled="False">
+            <Button.Background>
+                <ImageBrush ImageSource="images/5.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn6" Content="600 points" HorizontalAlignment="Right" Margin="0,183,35,0" VerticalAlignment="Top" Height="146" Width="136" IsEnabled="False">
+            <Button.Background>
+                <ImageBrush ImageSource="/6.jpg"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="btn7" Content="700 points" HorizontalAlignment="Left" Margin="30,353,0,0" VerticalAlignment="Top" Height="146" Width="137" IsEnabled="False">
+            <Button.Background>
+                <ImageBrush ImageSource="images/7.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn8" Content="800 points" Margin="187,353,193,0" VerticalAlignment="Top" Height="146" IsEnabled="False">
+            <Button.Background>
+                <ImageBrush ImageSource="images/8.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn9" Content="900 points" HorizontalAlignment="Left" Margin="346,353,0,0" VerticalAlignment="Top" Height="146" Width="136" IsEnabled="False">
+            <Button.Background>
+                <ImageBrush ImageSource="images/9.jpg"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
