@@ -125,7 +125,7 @@ namespace Dewey_divertissement {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Dewey divertissement;V1.0.0.0;component/windows/achievements.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Dewey divertissement;component/windows/achievements.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Windows\Achievements.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -27,24 +27,24 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\1.jpg" />
-    <Resource Include="Images\2.jpg" />
-    <Resource Include="Images\3.jpg" />
-    <Resource Include="Images\4.jpg" />
-    <Resource Include="Images\5.jpg" />
-    <Resource Include="Images\6.jpg" />
-    <Resource Include="Images\7.jpg" />
-    <Resource Include="Images\8.jpg" />
-    <Resource Include="Images\9.jpg" />
-    <Resource Include="Images\achievements icon.png" />
-    <Resource Include="books.png" />
-    <Resource Include="App icons\books.png" />
-    <Resource Include="App icons\numbers.png" />
-    <Resource Include="App icons\search.png" />
-    <Resource Include="App icons\user.png" />
-    <Resource Include="Images\instruction.png" />
-    <Resource Include="Images\numbers.png" />
-    <Resource Include="Images\search.png" />
+    <Resource Include="images\1.jpg" />
+    <Resource Include="images\2.jpg" />
+    <Resource Include="images\3.jpg" />
+    <Resource Include="images\4.jpg" />
+    <Resource Include="images\5.jpg" />
+    <Resource Include="images\6.jpg" />
+    <Resource Include="images\7.jpg" />
+    <Resource Include="images\8.jpg" />
+    <Resource Include="images\9.jpg" />
+    <Resource Include="images\achievements icon.png" />
+    <Resource Include="images\books.png" />
+    <Resource Include="images\instruction.png" />
+    <Resource Include="images\numbers.png" />
+    <Resource Include="images\search.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="App.xaml" />
   </ItemGroup>
 
 </Project>

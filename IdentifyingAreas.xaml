@@ -5,15 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dewey_divertissement"
         mc:Ignorable="d"
-        Title="Identifying_areas" Height="485" Width="800" Background="#FF00BFFE">
+        Title="Identifying_areas" Height="485" Width="800" Background="#FF00BFFE" Loaded="Window_Loaded">
     <Grid >
         <Label Content="Have two list boxes. When a user clicks on one textbox the message must change from --text-- to ----" HorizontalAlignment="Center" Margin="0,379,0,0" VerticalAlignment="Top"/>
-        <ListBox Margin="157,102,461,101"/>
-        <ListBox Margin="423,102,195,101"/>
-        <Label Content="Now match with colum B" HorizontalAlignment="Left" Margin="306,30,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="lbColumnA" Margin="157,102,461,101"/>
+        <ListBox Name="lbColumnB" Margin="423,102,195,101"/>
+        <Label Content="Now match with colum B" HorizontalAlignment="Left" Margin="177,43,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="Column A" HorizontalAlignment="Left" Margin="205,82,0,0" VerticalAlignment="Top"/>
         <Label Content="Column B" HorizontalAlignment="Left" Margin="514,77,0,0" VerticalAlignment="Top"/>
         <Button Content="Add" Name="btnAdd" HorizontalAlignment="Left" Margin="23,23,0,0" VerticalAlignment="Top" Height="44" Width="56" Click="btnAdd_Click"/>
+        <Button Content="Match" Name="btnMatch" HorizontalAlignment="Left" Margin="349,208,0,0" VerticalAlignment="Top" Height="44" Width="56" Click="btnMatch_Click"/>
+        <Label Name="lbLives" Content="Lives: ♥♥♥" HorizontalAlignment="Left" Margin="659,10,0,0" VerticalAlignment="Top" FontSize="22"/>
 
 
     </Grid>

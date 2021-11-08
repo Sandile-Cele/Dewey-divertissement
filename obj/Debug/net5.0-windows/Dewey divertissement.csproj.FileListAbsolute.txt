@@ -5,12 +5,19 @@ C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\bin\Debug\net5.0-windows\De
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\bin\Debug\net5.0-windows\Dewey divertissement.dll
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\bin\Debug\net5.0-windows\ref\Dewey divertissement.dll
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\bin\Debug\net5.0-windows\Dewey divertissement.pdb
-C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Dewey divertissement.csproj.AssemblyReference.cache
+C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Achievements.g.cs
+C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\CreateMatch.g.cs
+C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\IdentifyingAreas.g.cs
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\ReplacingBooks.g.cs
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\App.g.cs
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Dewey divertissement_MarkupCompile.cache
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Dewey divertissement_MarkupCompile.lref
+C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Achievements.baml
+C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\CreateMatch.baml
+C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\IdentifyingAreas.baml
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\ReplacingBooks.baml
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Dewey divertissement.g.resources
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Dewey divertissement.GeneratedMSBuildEditorConfig.editorconfig
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Dewey divertissement.AssemblyInfoInputs.cache
@@ -20,11 +27,4 @@ C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\De
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\ref\Dewey divertissement.dll
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Dewey divertissement.pdb
 C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Dewey divertissement.genruntimeconfig.cache
-C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\ReplacingBooks.g.cs
-C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\ReplacingBooks.baml
-C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Achievements.g.cs
-C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Achievements.baml
-C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\CreateMatch.g.cs
-C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Identifying areas.g.cs
-C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\CreateMatch.baml
-C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Identifying areas.baml
+C:\Cave\repos\prog poe\Mine WPF\Dewey divertissement\obj\Debug\net5.0-windows\Dewey divertissement.csproj.AssemblyReference.cache

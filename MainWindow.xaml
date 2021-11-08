@@ -13,15 +13,15 @@
         <Rectangle HorizontalAlignment="Center" Height="158" Margin="0,184,0,0" Stroke="Black" VerticalAlignment="Top" Width="151" Fill="#FF003A6A"/>
         <Rectangle Stroke="Black" Margin="426,376,0,0" Fill="#FF004FAE" Height="100" VerticalAlignment="Top" HorizontalAlignment="Left" Width="592"/>
 
-        <Image HorizontalAlignment="Left" Height="125" Margin="486,194,0,0" VerticalAlignment="Top" Width="119" Source="/books.png"/>
+        <Image HorizontalAlignment="Left" Height="125" Margin="486,194,0,0" VerticalAlignment="Top" Width="119" Source="/Images/books.png"/>
         <Button Content="Replacing books" Name="btnReplacingBooks" HorizontalAlignment="Left" Margin="755,238,0,0" VerticalAlignment="Top" Background="#FFFFD100" FontSize="24" Height="51" Width="220" FontWeight="Normal" Click="btnReplacingBooks_Click"/>
         <Button Content="Identifying areas" x:Name="btnReplacingBooks_Copy" HorizontalAlignment="Left" Margin="475,400,0,0" VerticalAlignment="Top" Background="#FFFFD100" FontSize="24" Height="52" Width="220" FontWeight="Normal" Click="btnReplacingBooks_Copy_Click"/>
         <Rectangle HorizontalAlignment="Left" Height="158" Margin="827,347,0,0" VerticalAlignment="Top" Width="152" Fill="#FF003A6A" Stroke="Black"/>
         <Rectangle Stroke="Black" Margin="426,539,0,0" Fill="#FF004FAE" Height="100" VerticalAlignment="Top" HorizontalAlignment="Left" Width="592"/>
         <Button Content="Finding call numbers" x:Name="btnReplacingBooks_Copy1" HorizontalAlignment="Left" Margin="722,564,0,0" VerticalAlignment="Top" Background="#FFFFD100" FontSize="24" Height="50" Width="253" FontWeight="Normal" IsEnabled="False"/>
         <Rectangle HorizontalAlignment="Center" Height="158" Margin="0,510,0,0" VerticalAlignment="Top" Width="152" Fill="#FF003A6A" Stroke="Black"/>
-        <Image HorizontalAlignment="Left" Height="126" Margin="840,363,0,0" VerticalAlignment="Top" Width="126" Source="/App icons/search.png"/>
-        <Image HorizontalAlignment="Center" Height="134" Margin="0,524,0,0" VerticalAlignment="Top" Width="130" Source="/App icons/numbers.png"/>
+        <Image HorizontalAlignment="Left" Height="126" Margin="840,363,0,0" VerticalAlignment="Top" Width="126" Source="images/search.png"/>
+        <Image HorizontalAlignment="Center" Height="134" Margin="0,524,0,0" VerticalAlignment="Top" Width="130" Source="images/numbers.png"/>
         <Rectangle HorizontalAlignment="Left" Height="607" Margin="94,47,0,0" Stroke="Black" VerticalAlignment="Top" Width="310" Fill="#FF004FAE"/>
 
         <Ellipse
@@ -34,7 +34,7 @@
         <Rectangle HorizontalAlignment="Left" Height="59" Margin="124,283,0,0" Stroke="Black" VerticalAlignment="Top" Width="261" Fill="#FF003A6A"/>
         <TextBlock HorizontalAlignment="Left" Margin="140,294,0,0" Text="Profile" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
         <Button Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="286,294,0,0" VerticalAlignment="Top" Height="38" FontSize="22" Width="86" Background="#FFFFD100" Click="btnLogin_Click"/>
-        <Image Height="132" Margin="200,98,794,0" VerticalAlignment="Top" Source="/App icons/user.png"/>
+        <Image Height="132" Margin="200,98,794,0" VerticalAlignment="Top" Source="images/user.png"/>
         <Rectangle HorizontalAlignment="Left" Height="58" Margin="124,378,0,0" Stroke="Black" VerticalAlignment="Top" Width="261" Fill="#FF003A6A"/>
         <TextBlock HorizontalAlignment="Left" Margin="140,392,0,0" Text="Leader board" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
         <Button Name="btnLeaderboard" Content="View&#xD;&#xA;View" HorizontalAlignment="Left" Margin="286,388,0,0" VerticalAlignment="Top" Height="38" FontSize="22" Width="85" Background="#FFFFD100" Click="btnLeaderboard_Click"/>
