@@ -8,8 +8,9 @@ namespace Dewey_divertissement.Class
 {
     class ColumnMan
     {
+        //Used to store call numbers and descriptions
         public static Dictionary<int, string> columnList = new() {
-            {000, "General works"},
+            {0, "General works"},
             {100, "Philosophy and psychology"},
             {200, "Religion"},
             {300, "Social sciences"},
@@ -46,13 +47,12 @@ namespace Dewey_divertissement.Class
             return tempColumnList;          
         }
 
-
-
+        //Checking if the passed string and the key are in the dictionary
         public bool DoTheyMatch(int key, string value)
         {
-            int keyA = columnList.FirstOrDefault(x => x.Value == value && x.Key == key).Key;
+            string keyA = columnList.FirstOrDefault(x => x.Value == value && x.Key.Equals(key)).Value;
 
-            if (keyA == 0)
+            if (keyA == null)
             {
                 return false;
             }
@@ -62,18 +62,10 @@ namespace Dewey_divertissement.Class
             }
         }
 
-        public int getKeyFromValue(string value)
-        {
-            int key = columnList.FirstOrDefault(x => x.Value == value).Key;
-
-            return key;
-        }
 
         //Generate 7 random(1 to 10) number then, put in list
         private List<int> getRandom7()
         {
-            int randomNumbers = 7;
-
             Random random = new();
 
             List<int> tempRandom = new();

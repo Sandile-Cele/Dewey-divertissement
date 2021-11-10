@@ -8,13 +8,16 @@ namespace Dewey_divertissement.Class
 {
     class LifeMan
     {
-        private static string lives = "♥♥♥";
+        //Managing lives
+        private static string lives = "♥♥♥♥";
 
+        //Return lives left
         public static string getLives()
         {
             return lives;
         }
 
+        //If user made a bad selection, remove a life
         public static bool removeLife()
         {
             try
@@ -31,7 +34,7 @@ namespace Dewey_divertissement.Class
 
         public static void reset()
         {
-            lives = "♥♥♥";
+            lives = "♥♥♥♥";
         }
     }
 }

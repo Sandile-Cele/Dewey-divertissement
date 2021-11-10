@@ -4,52 +4,48 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
         xmlns:local="clr-namespace:Dewey_divertissement"
         mc:Ignorable="d"
-        Title="Identifying_areas" Height="528" Width="790" Background="#FF00BFFE" Loaded="Window_Loaded">
+        Title="Identifying_areas" Height="526" Width="686" Background="#FF00BFFE" Loaded="Window_Loaded">
     <Grid ContextMenuClosing="Grid_ContextMenuClosing" >
-        <Rectangle HorizontalAlignment="Left" Height="472" Margin="10,0,0,28" VerticalAlignment="Bottom" Width="185" Fill="#FF004FAE"/>
-        <ListBox Name="lbColumnA" Margin="222,152,0,45" Background="#FFC4EFFD" FontFamily="Segoe UI" HorizontalAlignment="Left" Width="191"/>
-        <ListBox Name="lbColumnB" Margin="418,152,0,45" Background="#FFC4EFFD" FontFamily="Segoe UI" HorizontalAlignment="Left" Width="191"/>
-        <Label Content="Identifying areas" HorizontalAlignment="Left" Margin="289,0,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="2.324,0.031" FontFamily="Segoe UI" FontWeight="Normal"/>
-        <Label Content="Column A" HorizontalAlignment="Left" Margin="265,111,0,0" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="22"/>
-        <Label Content="Column B" HorizontalAlignment="Left" Margin="472,113,0,0" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="22"/>
-        <Button Content="Match" Name="btnMatch" HorizontalAlignment="Left" Margin="614,216,0,0" VerticalAlignment="Top" Height="44" Width="72" Click="btnMatch_Click" FontFamily="Segoe UI" Background="#FFFFD100"/>
-        <Label Name="lbLives" Content="Lives: ♥♥♥" HorizontalAlignment="Left" Margin="29,12,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Segoe UI"/>
-        <Button Name="btnCallsVsAreas" Content="Calls vs Areas" HorizontalAlignment="Left" Margin="41,62,0,0" VerticalAlignment="Top" Width="122" Click="btnCallsVsAreas_Click" Height="27" FontFamily="Segoe UI" Background="#FFFF4B23" FontSize="14"/>
-        <Button Name="btnRestart" Content="Restart" HorizontalAlignment="Left" Margin="614,288,0,0" VerticalAlignment="Top" Width="72" Height="35" Click="btnRestart_Click" FontFamily="Segoe UI" Background="#FFFFD100"/>
-        <ComboBox Name="cbDifficulty" HorizontalAlignment="Left" Margin="41,134,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" FontFamily="Segoe UI"/>
-        <Button Content="Start" HorizontalAlignment="Left" Margin="614,152,0,0" VerticalAlignment="Top" Width="72" Height="36" FontFamily="Segoe UI" Background="#FFFFD100"/>
-        <Label Content="Match the columns" HorizontalAlignment="Left" Margin="319,47,0,0" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="2.324,0.031" FontFamily="Segoe UI" FontWeight="Normal"/>
-        <ProgressBar Name="pbNextArchivement" HorizontalAlignment="Right" Height="37" Margin="0,203,-153,0" VerticalAlignment="Top" Width="414" Background="#FF004FAE" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5">
-            <ProgressBar.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90.376"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </ProgressBar.RenderTransform>
-        </ProgressBar>
-        <Label Content="Until all achievements are unlocked" HorizontalAlignment="Right" Margin="0,0,-138,213" FontSize="16" RenderTransformOrigin="0.5,0.5" Width="386" Height="31" VerticalAlignment="Bottom">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
-        <Label Content="Time:" HorizontalAlignment="Left" Margin="42,91,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <Label Name="lbTime" Content="00:00" HorizontalAlignment="Left" Margin="101,91,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <Rectangle HorizontalAlignment="Left" Height="118" Margin="42,338,0,0" VerticalAlignment="Top" Width="118" Fill="#FFFFD100"/>
-        <Button Name="btnAchievements" Content="" HorizontalAlignment="Left" Margin="52,346,0,0" VerticalAlignment="Top" Height="102" Width="92" Click="btnAchievements_Click" BorderBrush="{x:Null}">
+        <Rectangle HorizontalAlignment="Left" Margin="40,37,0,0" Width="207" Fill="#FF004FAE" Height="463" VerticalAlignment="Top"/>
+        <ListBox Name="lbColumnA" Margin="251,204,0,0" Background="#FFC4EFFD" FontFamily="Segoe UI" HorizontalAlignment="Left" Width="191" Height="188" VerticalAlignment="Top"/>
+        <ListBox Name="lbColumnB" Margin="447,204,0,0" Background="#FFC4EFFD" FontFamily="Segoe UI" HorizontalAlignment="Left" Width="191" Height="188" VerticalAlignment="Top"/>
+        <Label Content="Identifying areas" HorizontalAlignment="Left" Margin="271,28,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="2.324,0.031" FontFamily="Segoe UI" FontWeight="Normal"/>
+        <Label Content="Column A" HorizontalAlignment="Left" Margin="294,163,0,0" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="22"/>
+        <Label Content="Column B" HorizontalAlignment="Left" Margin="501,165,0,0" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="22"/>
+        <Button Content="Match" Name="btnMatch" HorizontalAlignment="Left" Margin="408,397,0,0" VerticalAlignment="Top" Height="35" Width="72" Click="btnMatch_Click" FontFamily="Segoe UI" Background="#FFFFD100"/>
+        <Label Name="lbLives" Content="Lives: ♥♥♥♥" HorizontalAlignment="Left" Margin="59,37,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Segoe UI"/>
+        <Button Name="btnCallsVsAreas" Content="Calls vs Areas" HorizontalAlignment="Left" Margin="71,87,0,0" VerticalAlignment="Top" Width="159" Click="btnCallsVsAreas_Click" Height="27" FontFamily="Segoe UI" Background="#FFFFD100" FontSize="16"/>
+        <Button Name="btnRestart" Content="Restart" HorizontalAlignment="Left" Margin="251,397,0,0" VerticalAlignment="Top" Width="72" Height="35" Click="btnRestart_Click" FontFamily="Segoe UI" Background="#FFFFD100"/>
+        <Button Content="Start" HorizontalAlignment="Left" Margin="566,396,0,0" VerticalAlignment="Top" Width="72" Height="36" FontFamily="Segoe UI" Background="#FFFFD100" Click="Button_Click"/>
+        <Label Content="Match the columns" HorizontalAlignment="Left" Margin="271,75,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="2.324,0.031" FontFamily="Segoe UI" FontWeight="Normal"/>
+        <ProgressBar Name="pbNextArchivement" HorizontalAlignment="Right" Margin="0,437,22,0" Width="382" Background="#FF004FAE" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Height="38" VerticalAlignment="Top"/>
+        <Label Content="Until all achievements are unlocked" Margin="319,441,107,0" FontSize="16" RenderTransformOrigin="0.5,0.5" Height="30" VerticalAlignment="Top"/>
+        <Label Content="Time:" HorizontalAlignment="Left" Margin="567,37,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Name="lbTime" Content="00:00:00" HorizontalAlignment="Left" Margin="548,72,0,0" VerticalAlignment="Top" FontSize="22" RenderTransformOrigin="0.458,2.115"/>
+        <Rectangle HorizontalAlignment="Left" Height="120" Margin="80,315,0,0" VerticalAlignment="Top" Width="104" Fill="#FFFFD100"/>
+        <Button Name="btnAchievements" Content="" HorizontalAlignment="Left" Margin="98,335,0,0" VerticalAlignment="Top" Height="80" Width="75" Click="btnAchievements_Click" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/images/achievements icon.png"/>
             </Button.Background>
         </Button>
-        <Label Content="Message" HorizontalAlignment="Left" Margin="371,84,0,0" VerticalAlignment="Top" FontSize="20" Width="101"/>
+        <Label Name="lbMessageRight" Content="Right" HorizontalAlignment="Left" Margin="511,138,0,0" VerticalAlignment="Top" FontSize="20" Width="68" Background="{x:Null}" Foreground="#FF0CFF00" Visibility="Hidden" RenderTransformOrigin="1.206,2.788"/>
+        <Label Content="♥" HorizontalAlignment="Left" Margin="122,37,0,0" VerticalAlignment="Top" FontSize="24" Foreground="Red"/>
+        <Button Name="btnLifeInfo" Content="" HorizontalAlignment="Left" Margin="212,40,0,0" VerticalAlignment="Top" Height="35" Width="35" BorderBrush="{x:Null}" Click="btnLifeInfo_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/images/instruction.png"/>
+            </Button.Background>
+        </Button>
+        <Label Name="lbMessageWrong" Content="Wrong" HorizontalAlignment="Left" Margin="312,121,0,0" VerticalAlignment="Top" FontSize="20" Width="68" Background="{x:Null}" Foreground="Red" Visibility="Hidden"/>
+        <Rectangle HorizontalAlignment="Left" Height="161" Margin="69,131,0,0" VerticalAlignment="Top" Width="149" Fill="#FF003A6A"/>
+        <Label Content="Points:&#xA;10min 2 points&#xA;5min 5 points&#xA;2 min 10 points" HorizontalAlignment="Left" Margin="84,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Width="114" Foreground="#FFF1FBAF"/>
+        <Image HorizontalAlignment="Left" Height="76" Margin="114,131,0,0" VerticalAlignment="Top" Width="72" Source="/images/instruction.png"/>
+        <Label Content="Points:" HorizontalAlignment="Left" Margin="77,442,0,0" VerticalAlignment="Top" FontSize="22" RenderTransformOrigin="0.5,0.5">
+
+        </Label>
+        <Label Name="lbPt" Content="00" HorizontalAlignment="Left" Margin="184,437,0,0" VerticalAlignment="Top" FontSize="22" RenderTransformOrigin="1.097,-4.583"/>
 
 
 

@@ -112,8 +112,6 @@ namespace Dewey_divertissement
                 //I'm converting the users list box details to a list
                 List<string> userList = lbCalls.Items.Cast<string>().ToList();
 
-
-
                 //Comparing the users list and the sorted list
                 if (Enumerable.SequenceEqual(CallList.getSortedString(), userList))
                 {
@@ -200,7 +198,6 @@ namespace Dewey_divertissement
 
                 //I'm converting the users list box details to a list
                 List<string> userList = lbCalls.Items.Cast<string>().ToList();
-
 
 
                 //Comparing the users list and the sorted list
@@ -292,7 +289,11 @@ namespace Dewey_divertissement
 
             }
         }
-
+        private void btnAchievements_Click(object sender, RoutedEventArgs e)
+        {
+            Achievements achievements = new();
+            achievements.ShowDialog();
+        }
 
 
 
@@ -361,10 +362,6 @@ namespace Dewey_divertissement
             }
         }
 
-        private void btnAchievements_Click(object sender, RoutedEventArgs e)
-        {
-            Achievements achievements = new();
-            achievements.ShowDialog();
-        }
+   
     }
 }
