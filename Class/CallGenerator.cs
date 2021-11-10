@@ -11,7 +11,6 @@ namespace Dewey_divertissement
         //The random class will be used to create 3 random numbers and 3 random letters
         private static readonly Random random = new Random();
 
-
         public static CallNumber getRandomCall()
         {
             return new CallNumber(getThreeNums(), getThreeNums(), getThreeLetters());

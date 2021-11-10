@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        ResizeMode="NoResize"
         xmlns:local="clr-namespace:Dewey_divertissement"
         mc:Ignorable="d"
         Title="ReplacingBooks" Height="576" Width="663" Background="#FF00BFFE" Closing="Window_Closing" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">

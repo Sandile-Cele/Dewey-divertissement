@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dewey_divertissement"
+        ResizeMode="NoResize"
         mc:Ignorable="d"
         Title="MainWindow" Height="750" Width="1102" FontSize="48" Closing="Window_Closing" Background="White" WindowStartupLocation="CenterScreen">
     <Grid Background="#FF00BFFE">
@@ -34,7 +35,7 @@
         <Rectangle HorizontalAlignment="Left" Height="59" Margin="124,283,0,0" Stroke="Black" VerticalAlignment="Top" Width="261" Fill="#FF003A6A"/>
         <TextBlock HorizontalAlignment="Left" Margin="140,294,0,0" Text="Profile" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
         <Button Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="286,294,0,0" VerticalAlignment="Top" Height="38" FontSize="22" Width="86" Background="#FFFFD100" Click="btnLogin_Click"/>
-        <Image Height="132" Margin="200,98,794,0" VerticalAlignment="Top" Source="images/user.png"/>
+        <Image Height="132" Margin="200,98,794,0" VerticalAlignment="Top" Source="/images/user.png"/>
         <Rectangle HorizontalAlignment="Left" Height="58" Margin="124,378,0,0" Stroke="Black" VerticalAlignment="Top" Width="261" Fill="#FF003A6A"/>
         <TextBlock HorizontalAlignment="Left" Margin="140,392,0,0" Text="Leader board" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
         <Button Name="btnLeaderboard" Content="View&#xD;&#xA;View" HorizontalAlignment="Left" Margin="286,388,0,0" VerticalAlignment="Top" Height="38" FontSize="22" Width="85" Background="#FFFFD100" Click="btnLeaderboard_Click"/>

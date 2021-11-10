@@ -3,19 +3,55 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        ResizeMode="NoResize"
         xmlns:local="clr-namespace:Dewey_divertissement"
         mc:Ignorable="d"
-        Title="Identifying_areas" Height="485" Width="800" Background="#FF00BFFE" Loaded="Window_Loaded">
-    <Grid >
-        <Label Content="Have two list boxes. When a user clicks on one textbox the message must change from --text-- to ----" HorizontalAlignment="Center" Margin="0,379,0,0" VerticalAlignment="Top"/>
-        <ListBox Name="lbColumnA" Margin="157,102,461,101"/>
-        <ListBox Name="lbColumnB" Margin="423,102,195,101"/>
-        <Label Content="Now match with colum B" HorizontalAlignment="Left" Margin="177,43,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <Label Content="Column A" HorizontalAlignment="Left" Margin="205,82,0,0" VerticalAlignment="Top"/>
-        <Label Content="Column B" HorizontalAlignment="Left" Margin="514,77,0,0" VerticalAlignment="Top"/>
-        <Button Content="Add" Name="btnAdd" HorizontalAlignment="Left" Margin="23,23,0,0" VerticalAlignment="Top" Height="44" Width="56" Click="btnAdd_Click"/>
-        <Button Content="Match" Name="btnMatch" HorizontalAlignment="Left" Margin="349,208,0,0" VerticalAlignment="Top" Height="44" Width="56" Click="btnMatch_Click"/>
-        <Label Name="lbLives" Content="Lives: ♥♥♥" HorizontalAlignment="Left" Margin="659,10,0,0" VerticalAlignment="Top" FontSize="22"/>
+        Title="Identifying_areas" Height="528" Width="790" Background="#FF00BFFE" Loaded="Window_Loaded">
+    <Grid ContextMenuClosing="Grid_ContextMenuClosing" >
+        <Rectangle HorizontalAlignment="Left" Height="472" Margin="10,0,0,28" VerticalAlignment="Bottom" Width="185" Fill="#FF004FAE"/>
+        <ListBox Name="lbColumnA" Margin="222,152,0,45" Background="#FFC4EFFD" FontFamily="Segoe UI" HorizontalAlignment="Left" Width="191"/>
+        <ListBox Name="lbColumnB" Margin="418,152,0,45" Background="#FFC4EFFD" FontFamily="Segoe UI" HorizontalAlignment="Left" Width="191"/>
+        <Label Content="Identifying areas" HorizontalAlignment="Left" Margin="289,0,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="2.324,0.031" FontFamily="Segoe UI" FontWeight="Normal"/>
+        <Label Content="Column A" HorizontalAlignment="Left" Margin="265,111,0,0" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="22"/>
+        <Label Content="Column B" HorizontalAlignment="Left" Margin="472,113,0,0" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="22"/>
+        <Button Content="Match" Name="btnMatch" HorizontalAlignment="Left" Margin="614,216,0,0" VerticalAlignment="Top" Height="44" Width="72" Click="btnMatch_Click" FontFamily="Segoe UI" Background="#FFFFD100"/>
+        <Label Name="lbLives" Content="Lives: ♥♥♥" HorizontalAlignment="Left" Margin="29,12,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Segoe UI"/>
+        <Button Name="btnCallsVsAreas" Content="Calls vs Areas" HorizontalAlignment="Left" Margin="41,62,0,0" VerticalAlignment="Top" Width="122" Click="btnCallsVsAreas_Click" Height="27" FontFamily="Segoe UI" Background="#FFFF4B23" FontSize="14"/>
+        <Button Name="btnRestart" Content="Restart" HorizontalAlignment="Left" Margin="614,288,0,0" VerticalAlignment="Top" Width="72" Height="35" Click="btnRestart_Click" FontFamily="Segoe UI" Background="#FFFFD100"/>
+        <ComboBox Name="cbDifficulty" HorizontalAlignment="Left" Margin="41,134,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" FontFamily="Segoe UI"/>
+        <Button Content="Start" HorizontalAlignment="Left" Margin="614,152,0,0" VerticalAlignment="Top" Width="72" Height="36" FontFamily="Segoe UI" Background="#FFFFD100"/>
+        <Label Content="Match the columns" HorizontalAlignment="Left" Margin="319,47,0,0" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="2.324,0.031" FontFamily="Segoe UI" FontWeight="Normal"/>
+        <ProgressBar Name="pbNextArchivement" HorizontalAlignment="Right" Height="37" Margin="0,203,-153,0" VerticalAlignment="Top" Width="414" Background="#FF004FAE" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5">
+            <ProgressBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.376"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ProgressBar.RenderTransform>
+        </ProgressBar>
+        <Label Content="Until all achievements are unlocked" HorizontalAlignment="Right" Margin="0,0,-138,213" FontSize="16" RenderTransformOrigin="0.5,0.5" Width="386" Height="31" VerticalAlignment="Bottom">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Time:" HorizontalAlignment="Left" Margin="42,91,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Name="lbTime" Content="00:00" HorizontalAlignment="Left" Margin="101,91,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Rectangle HorizontalAlignment="Left" Height="118" Margin="42,338,0,0" VerticalAlignment="Top" Width="118" Fill="#FFFFD100"/>
+        <Button Name="btnAchievements" Content="" HorizontalAlignment="Left" Margin="52,346,0,0" VerticalAlignment="Top" Height="102" Width="92" Click="btnAchievements_Click" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/images/achievements icon.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Message" HorizontalAlignment="Left" Margin="371,84,0,0" VerticalAlignment="Top" FontSize="20" Width="101"/>
+
+
 
 
     </Grid>

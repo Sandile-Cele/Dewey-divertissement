@@ -22,6 +22,8 @@ namespace Dewey_divertissement
     {
         ColumnMan columnMan = new();
 
+        bool settingCallVsArea = true;//User setting for alternate between descriptions to call numbers and call numbers to descriptions.
+
         public Identifying_areas()
         {
             InitializeComponent();
@@ -29,19 +31,39 @@ namespace Dewey_divertissement
 
         private void btnMatch_Click(object sender, RoutedEventArgs e)
         {
-            int selectedWord1 = Int32.Parse(lbColumnA.SelectedItem.ToString());
-            string selectedWord2 = lbColumnB.SelectedItem.ToString();
-
-            if (columnMan.DoTheyMatch(selectedWord1, selectedWord2))
+            
+            if(lbColumnA.SelectedIndex == -1 & lbColumnB.SelectedIndex == -1)
             {
-                MessageBox.Show("You are right 👍");
+                //If the user has not selected anything show this error!
+                MessageBox.Show("Error", "Please choose form list box A and B.", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             else
             {
-                LifeMan.removeLife();
-                updateLives();
-                MessageBox.Show("You are wrong 👎");
+                //if (settingCallVsArea)
+                //{
+                //    columnMan.doCallVsAreaMatch();
+                //}
+                //else
+                //{
+                //    columnMan.doAreaVsCallsMatch();
+                //}
+
+                int selectedWord1 = Int32.Parse(lbColumnA.SelectedItem.ToString());
+                string selectedWord2 = lbColumnB.SelectedItem.ToString();
+
+                if (columnMan.DoTheyMatch(selectedWord1, selectedWord2))
+                {
+                    MessageBox.Show("Game done", "You are right!", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                }
+                else
+                {
+                    LifeMan.removeLife();
+                    updateLives();
+                    MessageBox.Show("Game done", "You are wrong!", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                }
+
             }
+
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
@@ -51,22 +73,69 @@ namespace Dewey_divertissement
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            foreach (var item in ColumnMan.columnList)
-            {
-                //Adding to column B
-                lbColumnB.Items.Add(item.Value);
+            startGameCallsVsAreas(true);
+        }
 
-                //c# converting 000 to 0, i need to show the user "000"
-                if (item.Key.Equals(0))
+        //Load values to list boxes
+        private void startGameCallsVsAreas(bool callVsArea)
+        {
+            lbColumnA.Items.Clear();
+            lbColumnB.Items.Clear();
+
+            LifeMan.reset();
+            updateLives();
+
+            Dictionary<int, string> tempRandomValues = columnMan.getRandomList();
+
+            //If user is playing calls vs areas, then load calls in column a then areas in column b
+            if (callVsArea)
+            {
+
+                for (int i = 0; i < tempRandomValues.Count; i++)
                 {
-                    lbColumnA.Items.Add("000");
-                }
-                else
-                {
-                    lbColumnA.Items.Add(item.Key.ToString());
+                    if(i < 4)//Only load 4 items in column a
+                    {
+                        /*C# will change "000"(int) to "0" but it want to show "000".
+                         * So if the call is 0 put "000" in list box
+                         */
+                        if (tempRandomValues.ElementAt(i).Key != 0)
+                        {
+                            lbColumnA.Items.Add(tempRandomValues.ElementAt(i).Key.ToString());
+                        }
+                        else
+                        {
+                            lbColumnA.Items.Add("000");
+                        }
+                    }
+
+                    lbColumnB.Items.Add(tempRandomValues.ElementAt(i).Value);
+
                 }
 
             }
+            //Otherwise load areas in column a then calls in column b
+            else
+            {
+                for (int i = 0; i < tempRandomValues.Count; i++)
+                {
+
+                    if (i < 4)//Only load 4 items in column a
+                    {
+                        lbColumnA.Items.Add(tempRandomValues.ElementAt(i).Value);
+                    }
+
+                    if (tempRandomValues.ElementAt(i).Key != 0)
+                    {
+                        lbColumnB.Items.Add(tempRandomValues.ElementAt(i).Key.ToString());
+                    }
+                    else
+                    {
+                        lbColumnB.Items.Add("000");
+                    }
+
+                }
+            }
+
         }
 
         private void updateLives()
@@ -80,6 +149,37 @@ namespace Dewey_divertissement
                 lbLives.Content = "Lives: " + LifeMan.getLives();
             }
 
+        }
+
+        private void btnCallsVsAreas_Click(object sender, RoutedEventArgs e)
+        {
+            if (settingCallVsArea)
+            {
+                btnCallsVsAreas.Content = "Areas vs calls";
+                settingCallVsArea = false;
+            }
+            else
+            {
+                btnCallsVsAreas.Content = "Calls vs areas";
+                settingCallVsArea = true;
+            }
+            startGameCallsVsAreas(settingCallVsArea);
+        }
+
+        private void Grid_ContextMenuClosing(object sender, ContextMenuEventArgs e)
+        {
+            startGameCallsVsAreas(settingCallVsArea);
+        }
+
+        private void btnRestart_Click(object sender, RoutedEventArgs e)
+        {
+            startGameCallsVsAreas(settingCallVsArea);
+        }
+
+        private void btnAchievements_Click(object sender, RoutedEventArgs e)
+        {
+            Achievements achievements = new();
+            achievements.ShowDialog();
         }
     }
 }

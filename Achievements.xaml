@@ -34,7 +34,7 @@
         </Button>
         <Button x:Name="btn6" Content="600 points" HorizontalAlignment="Right" Margin="0,183,35,0" VerticalAlignment="Top" Height="146" Width="136" IsEnabled="False">
             <Button.Background>
-                <ImageBrush ImageSource="/6.jpg"/>
+                <ImageBrush ImageSource="images/6.jpg"/>
             </Button.Background>
         </Button>
 
